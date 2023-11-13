@@ -27,13 +27,16 @@ To run the Ambulance Booking System, follow these steps:
 4. Follow the on-screen instructions to use the Ambulance Booking System.
 
 **##Usage**
+
 Choose an option from the menu by entering the corresponding number (1-4).
 
 Follow the prompts to provide the necessary information for booking ambulances, hospitals, or finding the shortest path.
 
 Exit the system when done.
 
-**Contributors**
+**##Contributors**
+
+
 Vikram Gupta
 Manya Singh
 Prachi Singh
