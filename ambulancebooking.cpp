@@ -38,11 +38,17 @@ std::vector<Ambulance> generateRandomAmbulanceLocations(int numAmbulances) {
         ambulance.location.x = rand() % 100;
         ambulance.location.y = rand() % 100;
         ambulance.timeWithoutTraffic = rand() % 100 + 1;
-        ambulance.timeWithTraffic = rand() % 100 + 1;
+
+        // Ensure timeWithTraffic is greater than timeWithoutTraffic
+        do {
+            ambulance.timeWithTraffic = rand() % 150 + 1;
+        } while (ambulance.timeWithTraffic <= ambulance.timeWithoutTraffic);
+
         ambulances.push_back(ambulance);
     }
     return ambulances;
 }
+
 
 void bookAmbulance(const std::vector<Ambulance>& ambulances) {
     std::cout << "Enter your location (x y): ";
